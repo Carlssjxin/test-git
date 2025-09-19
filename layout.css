@@ -1,0 +1,65 @@
+/* 容器样式 - 用于居中内容并设置最大宽度 */
+.container {
+    max-width: 1200px; /* 最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 0 20px; /* 左右内边距 */
+}
+
+/* 主要内容区域 */
+.main {
+    padding: 60px 0; /* 上下内边距 */
+}
+
+/* 内容区块样式 */
+.section {
+    background: white; /* 背景色 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* 阴影 */
+    padding: 30px; /* 内边距 */
+    margin-bottom: 30px; /* 下边距 */
+    transition: var(--transition); /* 过渡效果 */
+}
+
+/* 区块悬停效果 */
+.section:hover {
+    transform: translateY(-5px); /* 上移 */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* 阴影增强 */
+}
+
+/* 区块标题样式 */
+.section h2 {
+    color: var(--primary); /* 文字颜色 */
+    margin-bottom: 25px; /* 下边距 */
+    padding-bottom: 15px; /* 下内边距 */
+    border-bottom: 2px solid var(--light); /* 下边框 */
+    display: flex; /* 弹性布局 */
+    align-items: center; /* 垂直居中 */
+    gap: 10px; /* 元素间距 */
+}
+
+/* 网格布局 */
+.grid {
+    display: grid; /* 网格布局 */
+    gap: 20px; /* 网格间距 */
+}
+
+/* 弹性布局 */
+.flex {
+    display: flex; /* 弹性布局 */
+}
+
+.flex-center {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between; /* 两端对齐 */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column; /* 垂直方向 */
+}
